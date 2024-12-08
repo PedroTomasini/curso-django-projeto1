@@ -8,7 +8,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Recipe)
 class RecipeAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'created_at', 'is_published',)
+    list_display = ('id', 'title', 'is_published', 'created_at')
     list_editable = ('is_published',)
 
 
